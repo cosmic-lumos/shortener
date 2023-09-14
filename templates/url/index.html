@@ -3,10 +3,7 @@
 {% block content %}
     <form method="post">
         {% csrf_token %}
-        <div>
-            <label id="link">URL :</label>
-            <input type="text" id="link">
-        </div>
+        {{ form }}
         <button type="submit">단축</button>
     </form>
 {% endblock %}
