@@ -1,0 +1,12 @@
+{% extends "index.html" %}
+
+{% block content %}
+    <form method="post">
+        {% csrf_token %}
+        <div>
+            <label id="link">URL :</label>
+            <input type="text" id="link">
+        </div>
+        <button type="submit">단축</button>
+    </form>
+{% endblock %}
